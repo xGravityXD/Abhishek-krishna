@@ -18,6 +18,7 @@ body {
   background-color: #161b22;
   padding: 15px 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -33,11 +34,10 @@ body {
 
 .navbar ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-}
-
-.navbar ul li {
-  margin-left: 20px;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .navbar ul li a {
@@ -79,6 +79,7 @@ ul li {
   border-radius: 50%;
   margin-bottom: 20px;
   border: 3px solid #58a6ff;
+  object-fit: cover;
 }
 
 /* Buttons */
@@ -91,11 +92,12 @@ ul li {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn:hover {
   background-color: #2ea043;
+  transform: scale(1.05);
 }
 
 /* Project Cards */
@@ -112,6 +114,12 @@ ul li {
   border-radius: 10px;
   border: 1px solid #30363d;
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.3);
 }
 
 .project-card h3 {
@@ -120,8 +128,9 @@ ul li {
 }
 
 .project-card a {
-  color: #58a6ff;
+  color: #2ea043;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .project-card a:hover {
@@ -135,4 +144,26 @@ ul li {
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
 }
