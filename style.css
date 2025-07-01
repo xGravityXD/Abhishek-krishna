@@ -167,3 +167,11 @@ ul li {
     height: 120px;
   }
 }
+.footer {
+  background-color: #161b22;
+  color: #c9d1d9;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
