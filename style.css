@@ -225,3 +225,38 @@ ul li {
     padding: 40px 20px;
   }
 }
+/* Light Theme Styles */
+body.light-theme {
+  background-color: #ffffff;
+  color: #0d1117;
+}
+
+body.light-theme .navbar {
+  background-color: #f0f0f0;
+}
+
+body.light-theme .navbar a {
+  color: #0d1117;
+}
+
+body.light-theme .navbar a:hover {
+  color: #58a6ff;
+}
+
+body.light-theme .logo {
+  color: #0366d6;
+}
+
+body.light-theme .project-card {
+  background-color: #eaeaea;
+}
+
+body.light-theme .btn {
+  background-color: #0366d6;
+  color: white;
+}
+
+body.light-theme .footer {
+  background-color: #f8f8f8;
+  color: #444;
+}
