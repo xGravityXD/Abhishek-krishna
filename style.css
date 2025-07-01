@@ -175,3 +175,53 @@ ul li {
   font-size: 14px;
   margin-top: 40px;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .home-section {
+    padding: 40px 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
