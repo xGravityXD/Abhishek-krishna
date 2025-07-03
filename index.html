@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- Theme loader (avoid flicker on reload) -->
+  <!-- Prevent flicker on reload -->
   <script>
     if (localStorage.getItem('theme') === 'light') {
       document.documentElement.classList.add('light-theme');
@@ -32,7 +32,7 @@
   </header>
 
   <!-- Home -->
-  <section id="home" class="home-section" data-aos="fade-up">
+  <section id="home" data-aos="fade-up">
     <img src="IMG_web.jpg" alt="Abhishek's Photo" class="profile-pic" />
     <h1>Hi, I'm Abhishek Krishna</h1>
     <p>A passionate Computer Science student who loves to build, learn, and solve real-world problems through code.</p>
@@ -59,40 +59,29 @@
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project-list">
-      <!-- Weather App -->
       <div class="project-card" data-aos="zoom-in">
         <h3>Weather App</h3>
-        <p>A simple app that fetches real-time weather data using an API and displays it for a chosen city.</p>
+        <p>Fetches real-time weather data using an API and displays it for a selected city.</p>
         <a class="project-link" href="https://github.com/xGravityXD/weather-app" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- Portfolio -->
       <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
         <h3>Portfolio Website</h3>
-        <p>This website, built using HTML, CSS, and JavaScript, showcases my personal work and skills.</p>
+        <p>This personal portfolio site built with HTML, CSS, and GitHub Pages to showcase my skills and projects.</p>
         <a class="project-link" href="https://github.com/xGravityXD/Abhishek-krishna" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- Disaster Management -->
       <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
         <h3>Disaster Management Platform</h3>
-        <p>A comprehensive platform designed to assist in disaster preparedness and response with real-time weather alerts and emergency resources.</p>
-        <a class="project-link" href="https://github.com/xGravityXD/disaster-management" target="_blank">View Code on GitHub</a>
-
-        <!-- Gallery -->
+        <p>Helps users prepare and respond to disasters with real-time data, emergency info, and weather alerts.</p>
+        <a class="project-link" href="https://github.com/xGravityXD/disaster-management" target="_blank">View Code</a>
         <div class="gallery">
-          <!-- Images (11 total) -->
+          <!-- Project Gallery Thumbnails -->
           <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather1.jpg.jpg?raw=true" alt="Screenshot 1" />
           <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather2.jpg.jpg?raw=true" alt="Screenshot 2" />
           <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather3.jpg.jpg?raw=true" alt="Screenshot 3" />
           <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather4.jpg.jpg?raw=true" alt="Screenshot 4" />
           <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather5.jpg.jpg?raw=true" alt="Screenshot 5" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather6.jpg.jpg?raw=true" alt="Screenshot 6" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather7.jpg.jpg?raw=true" alt="Screenshot 7" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather8.jpg.jpg?raw=true" alt="Screenshot 8" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather9.jpg.jpg?raw=true" alt="Screenshot 9" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather10.jpg.jpg?raw=true" alt="Screenshot 10" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather11.jpg.jpg?raw=true" alt="Screenshot 11" />
         </div>
       </div>
     </div>
@@ -151,4 +140,3 @@
   </script>
 </body>
 </html>
-
