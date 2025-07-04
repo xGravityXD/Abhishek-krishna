@@ -1,31 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Abhishek Krishna | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <script>
-    if (localStorage.getItem('theme') === 'light') {
-      document.documentElement.classList.add('light-theme');
-    }
-  </script>
 </head>
 <body>
-  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Abhishek Krishna</div>
     <nav>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -34,49 +19,85 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+    <button id="theme-toggle">🌙 Dark Mode</button>
   </header>
 
-  <!-- Skills Section -->
-  <section id="skills" data-aos="fade-up">
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Abhishek Krishna</span></h1>
+      <p>Aspiring AI & ML Developer | Web Enthusiast | Problem Solver</p>
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="#resume" class="btn">Download Resume</a>
+    </div>
+    <img src="your-profile.jpg" alt="Profile" class="hero-img"/>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="your-profile.jpg" alt="Abhishek Krishna" class="about-img"/>
+      <p>
+        Hello! I'm <strong>Abhishek Krishna</strong>, a passionate <strong>Computer Science</strong> student deeply interested in <strong>AI, Machine Learning</strong>, and building meaningful software that solves real-world problems. <br><br>
+        I love clean code, modern design, and continuous learning. My current focus is on advancing my skills in <strong>Full Stack Development</strong> and <strong>AI/ML technologies</strong>. Let's build the future together!
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-item" data-aos="zoom-in" title="HTML5">
-        <i class="devicon-html5-plain colored"></i>
-        <p>HTML5</p>
+    <ul class="skills-list">
+      <li><img src="icons/html.svg" alt="HTML5" /> HTML5</li>
+      <li><img src="icons/css.svg" alt="CSS3" /> CSS3</li>
+      <li><img src="icons/js.svg" alt="JavaScript" /> JavaScript</li>
+      <li><img src="icons/python.svg" alt="Python" /> Python</li>
+      <li><img src="icons/cpp.svg" alt="C++" /> C/C++</li>
+      <li><img src="icons/git.svg" alt="Git" /> Git</li>
+      <li><img src="icons/github.svg" alt="GitHub" /> GitHub</li>
+      <li><img src="icons/ml.svg" alt="ML" /> ML Basics</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Built a modern, responsive personal portfolio using HTML, CSS, and JavaScript with light/dark theme toggle and animations.</p>
+        <a href="https://xgravityxd.github.io/Abhishek-krishna/" class="project-link" target="_blank">View Live</a>
       </div>
-      <div class="skill-item" data-aos="zoom-in" title="CSS3">
-        <i class="devicon-css3-plain colored"></i>
-        <p>CSS3</p>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Created a weather app using OpenWeatherMap API that shows real-time weather based on user input.</p>
+        <a href="#" class="project-link">View Project</a>
       </div>
-      <div class="skill-item" data-aos="zoom-in" title="JavaScript">
-        <i class="devicon-javascript-plain colored"></i>
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-item" data-aos="zoom-in" title="Python">
-        <i class="devicon-python-plain colored"></i>
-        <p>Python</p>
-      </div>
-      <div class="skill-item" data-aos="zoom-in" title="C/C++">
-        <i class="devicon-cplusplus-plain colored"></i>
-        <p>C/C++</p>
-      </div>
-      <div class="skill-item" data-aos="zoom-in" title="Git">
-        <i class="devicon-git-plain colored"></i>
-        <p>Git</p>
-      </div>
-      <div class="skill-item" data-aos="zoom-in" title="GitHub">
-        <i class="devicon-github-original"></i>
-        <p>GitHub</p>
-      </div>
-      <div class="skill-item" data-aos="zoom-in" title="Machine Learning">
-        <i class="devicon-tensorflow-original colored"></i>
-        <p>ML Basics</p>
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>Simple to-do list with local storage, allowing users to add, mark, and delete tasks.</p>
+        <a href="#" class="project-link">View Project</a>
       </div>
     </div>
   </section>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <p>Download my resume below:</p>
+    <a href="Abhishek_Krishna_Resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations, internships, or just to say hello!</p>
+    <div class="contact-buttons">
+      <a href="mailto:youremail@example.com" class="btn">Email Me</a>
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/xgravityxd" target="_blank" class="btn">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Abhishek Krishna. Built with ❤️ using HTML, CSS & JS.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
