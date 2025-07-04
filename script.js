@@ -1,19 +1,18 @@
+// Theme toggle
 const toggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-  body.classList.add('dark-theme');
-  toggleBtn.textContent = '🌞 Light Mode';
-}
-
 toggleBtn.addEventListener('click', () => {
   body.classList.toggle('dark-theme');
-  if (body.classList.contains('dark-theme')) {
-    toggleBtn.textContent = '🌞 Light Mode';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    toggleBtn.textContent = '🌙 Dark Mode';
-    localStorage.setItem('theme', 'light');
-  }
+  toggleBtn.textContent = body.classList.contains('dark-theme') ? '🌞 Light Mode' : '🌙 Dark Mode';
 });
+
+// Hamburger menu (optional)
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
