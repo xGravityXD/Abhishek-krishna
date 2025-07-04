@@ -184,3 +184,50 @@ body {
   font-size: 0.9rem;
   margin-top: 4rem;
 }
+/* === Valorant-style Skills Section === */
+.skills-section h2 {
+  font-size: 2.5rem;
+  color: #ff4655;
+  text-shadow: 0 0 10px rgba(255, 70, 85, 0.5);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-card {
+  background-color: #1f1f1f;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 140px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.02);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-weight: 600;
+  color: #f0f0f0;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 12px #ff4655;
+  border-color: #ff4655;
+}
