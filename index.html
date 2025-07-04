@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,8 @@
   <title>Abhishek Krishna | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-  <!-- Prevent flicker on reload -->
   <script>
     if (localStorage.getItem('theme') === 'light') {
       document.documentElement.classList.add('light-theme');
@@ -19,165 +20,63 @@
   <header class="navbar">
     <div class="logo">Abhishek Krishna</div>
     <nav>
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
   </header>
 
-  <!-- Hero Section -->
-<section id="home" class="hero-section" data-aos="fade-up">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Hi, I'm <span class="highlight">Abhishek Krishna</span></h1>
-      <p>Aspiring AI & ML Developer | Web Enthusiast | Problem Solver</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="AbhishekKrishna.cv%20(3)[1].pdf" class="btn" target="_blank">Download Resume</a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="IMG_web.jpg" alt="Abhishek Krishna" class="profile-pic-large" />
-    </div>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about" class="about-section" data-aos="fade-up">
-  <div class="about-container">
-    <div class="about-image">
-      <img src="IMG_web.jpg" alt="Abhishek Krishna" />
-    </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm <strong>Abhishek Krishna</strong>, a passionate <strong>Computer Science</strong> student
-        deeply interested in <strong>AI</strong>, <strong>Machine Learning</strong>, and building meaningful
-        software that solves real-world problems.
-      </p>
-      <p>
-        I love clean code, modern design, and continuous learning. My current focus is on advancing my skills
-        in <strong>Full Stack Development</strong> and <strong>AI/ML technologies</strong>. Let's build the future together!
-      </p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Skills -->
-  <section id="skills" data-aos="fade-right">
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python, C/C++</li>
-      <li>Git & GitHub</li>
-      <li>Basics of Machine Learning</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card" data-aos="zoom-in">
-        <h3>Weather App</h3>
-        <p>Fetches real-time weather data using an API and displays it for a selected city.</p>
-        <a class="project-link" href="https://github.com/xGravityXD/weather-app" target="_blank">View on GitHub</a>
+    <div class="skills-grid">
+      <div class="skill-item" data-aos="zoom-in" title="HTML5">
+        <i class="devicon-html5-plain colored"></i>
+        <p>HTML5</p>
       </div>
-
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-        <h3>Portfolio Website</h3>
-        <p>This personal portfolio site built with HTML, CSS, and GitHub Pages to showcase my skills and projects.</p>
-        <a class="project-link" href="https://github.com/xGravityXD/Abhishek-krishna" target="_blank">View on GitHub</a>
+      <div class="skill-item" data-aos="zoom-in" title="CSS3">
+        <i class="devicon-css3-plain colored"></i>
+        <p>CSS3</p>
       </div>
-
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>Disaster Management Platform</h3>
-        <p>Helps users prepare and respond to disasters with real-time data, emergency info, and weather alerts.</p>
-        <a class="project-link" href="https://github.com/xGravityXD/disaster-management" target="_blank">View Code</a>
-        <div class="gallery">
-          <!-- Project Gallery Thumbnails -->
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather1.jpg.jpg?raw=true" alt="Screenshot 1" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather2.jpg.jpg?raw=true" alt="Screenshot 2" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather3.jpg.jpg?raw=true" alt="Screenshot 3" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather4.jpg.jpg?raw=true" alt="Screenshot 4" />
-          <img src="https://github.com/xGravityXD/Abhishek-krishna/blob/main/weather5.jpg.jpg?raw=true" alt="Screenshot 5" />
-        </div>
+      <div class="skill-item" data-aos="zoom-in" title="JavaScript">
+        <i class="devicon-javascript-plain colored"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Python">
+        <i class="devicon-python-plain colored"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="C/C++">
+        <i class="devicon-cplusplus-plain colored"></i>
+        <p>C/C++</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Git">
+        <i class="devicon-git-plain colored"></i>
+        <p>Git</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="GitHub">
+        <i class="devicon-github-original"></i>
+        <p>GitHub</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Machine Learning">
+        <i class="devicon-tensorflow-original colored"></i>
+        <p>ML Basics</p>
       </div>
     </div>
   </section>
 
-  <!-- Resume -->
-  <section id="resume" data-aos="fade-up">
-    <h2>Resume</h2>
-    <p>Download my resume below:</p>
-    <a href="AbhishekKrishna.cv%20(3)[1].pdf" class="btn" target="_blank">Download Resume</a>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" data-aos="fade-in">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaborations, internships, or just to say hello!</p>
-    <div class="contact-links">
-      <a href="mailto:abhishekcse2125@gmail.com" class="btn">Email Me</a>
-      <a href="https://www.linkedin.com/in/abhishek-krishna" target="_blank" class="btn">LinkedIn</a>
-      <a href="https://github.com/xGravityXD" target="_blank" class="btn">GitHub</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Abhishek Krishna. Built with ❤️ using HTML, CSS & JS.</p>
-  </footer>
-
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      body.classList.add('light-theme');
-      toggleBtn.textContent = '🌑 Dark Mode';
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('light-theme');
-
-      if (body.classList.contains('light-theme')) {
-        toggleBtn.textContent = '🌑 Dark Mode';
-        localStorage.setItem('theme', 'light');
-      } else {
-        toggleBtn.textContent = '🌙 Light Mode';
-        localStorage.setItem('theme', 'dark');
-      }
-    });
-  </script>
-  <script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
-
+  <script>AOS.init();</script>
 </body>
 </html>
