@@ -8,88 +8,69 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-<header class="navbar">
-  <div class="logo">
-    <div class="logo-profile">
-      <img src="profile.jpg.jpg" alt="Abhishek Krishna" />
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-profile">
+        <img src="profile.jpg.jpg" alt="Abhishek Krishna" />
+      </div>
+      ABHISHEK KRISHNA
     </div>
-    ABHISHEK KRISHNA
-  </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <button id="theme-toggle">🎮 Toggle Theme</button>
-</header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🎮 Light Mode</button>
+  </header>
 
+  <!-- Hero Section with Slideshow -->
   <section id="hero" class="hero-section">
-  <div class="slideshow-container">
-    <div class="slide active" style="background-image: url('images/slide2.jpg.jpg')"></div>
-    <div class="slide" style="background-image: url('images/slide3.jpg.jpeg')"></div>
-    <div class="slide" style="background-image: url('images/slide5.jpg.jpeg')"></div>
-    <div class="slide" style="background-image: url('images/slide6.jpg.jpg')"></div>
-    <div class="slide" style="background-image: url('images/slide8.jpg')"></div>
-  </div>
-
-  <div class="hero-content">
-    <h1>I'm <span>Abhishek Krishna</span></h1>
-    <p>Aspiring AI/ML Developer • Web Creator • Tech Enthusiast</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn btn-alt">Let's Talk</a>
+    <div class="slideshow-container">
+      <div class="slide active" style="background-image: url('images/slide2.jpg.jpg')"></div>
+      <div class="slide" style="background-image: url('images/slide3.jpg.jpeg')"></div>
+      <div class="slide" style="background-image: url('images/slide5.jpg.jpeg')"></div>
+      <div class="slide" style="background-image: url('images/slide6.jpg.jpg')"></div>
+      <div class="slide" style="background-image: url('images/slide8.jpg')"></div>
     </div>
-  </div>
-</section>
 
+    <div class="hero-content">
+      <h1>I'm <span>Abhishek Krishna</span></h1>
+      <p>Aspiring AI/ML Developer • Web Creator • Tech Enthusiast</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-alt">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>I am a Computer Science student passionate about Artificial Intelligence, Machine Learning, and Web Development. I enjoy designing futuristic UIs, solving problems, and learning continuously.</p>
   </section>
 
+  <!-- Skills -->
   <section id="skills" class="section skills-section">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="icons/html.svg" alt="HTML" />
-      <p>HTML</p>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="icons/html.svg" alt="HTML"><p>HTML</p></div>
+      <div class="skill-card"><img src="icons/css.svg" alt="CSS"><p>CSS</p></div>
+      <div class="skill-card"><img src="icons/js.svg" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-card"><img src="icons/python.svg" alt="Python"><p>Python</p></div>
+      <div class="skill-card"><img src="icons/cpp.svg" alt="C++"><p>C/C++</p></div>
+      <div class="skill-card"><img src="icons/github.svg" alt="GitHub"><p>GitHub</p></div>
+      <div class="skill-card"><img src="icons/git.svg" alt="Git"><p>Git</p></div>
+      <div class="skill-card"><img src="icons/ml.svg" alt="Machine Learning"><p>ML Basics</p></div>
     </div>
-    <div class="skill-card">
-      <img src="icons/css.svg" alt="CSS" />
-      <p>CSS</p>
-    </div>
-    <div class="skill-card">
-      <img src="icons/js.svg" alt="JavaScript" />
-      <p>JavaScript</p>
-    </div>
-    <div class="skill-card">
-      <img src="icons/python.svg" alt="Python" />
-      <p>Python</p>
-    </div>
-    <div class="skill-card">
-      <img src="icons/cpp.svg" alt="C++" />
-      <p>C/C++</p>
-    </div>
-    <div class="skill-card">
-      <img src="icons/github.svg" alt="GitHub" />
-      <p>GitHub</p>
-    </div>
-    <div class="skill-card">
-      <img src="icons/git.svg" alt="Git" />
-      <p>Git</p>
-    </div>
-    <div class="skill-card">
-      <img src="icons/ml.svg" alt="Machine Learning" />
-      <p>ML Basics</p>
-    </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Projects -->
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="project-list">
@@ -111,11 +92,13 @@
     </div>
   </section>
 
+  <!-- Resume -->
   <section id="resume" class="section">
     <h2>Resume</h2>
     <a href="Abhishek_Krishna_Resume.pdf" class="btn" download>Download Resume</a>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="section">
     <h2>Contact Me</h2>
     <p>Reach out for collaborations, internships, or just to say hi!</p>
@@ -127,9 +110,9 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     &copy; 2025 built with love :) Abk.
   </footer>
 </body>
 </html>
- 
