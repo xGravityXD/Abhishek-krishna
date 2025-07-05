@@ -43,3 +43,18 @@ function nextSlide() {
 
 // Auto-slide every 5 seconds
 setInterval(nextSlide, 5000);
+// Slideshow autoplay
+let slideIndex = 0;
+const slides = document.querySelectorAll(".carousel-slide img");
+
+function showSlides() {
+  slides.forEach((slide, i) => {
+    slide.style.display = "none";
+  });
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 2500); // 2.5s delay
+}
+
+showSlides();
