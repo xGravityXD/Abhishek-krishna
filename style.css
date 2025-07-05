@@ -333,15 +333,4 @@ body {
   z-index: 1;
 }
 
-.slide .caption {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 12px 20px;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-left: 3px solid #ff2e63;
-  backdrop-filter: blur(6px);
-}
+
