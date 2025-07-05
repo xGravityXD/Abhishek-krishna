@@ -1,4 +1,4 @@
-// ====== Theme Toggle ======
+// === Dark/Light Theme Toggle ===
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -9,11 +9,12 @@ themeToggle.addEventListener('click', () => {
     : '🎮 Light Mode';
 });
 
-// ====== Parallax Slideshow (Hero Section) ======
+// === Slideshow Parallax Logic ===
 let currentSlide = 0;
 const slides = document.querySelectorAll('.parallax-container .slide');
+const totalSlides = slides.length;
 
-function showParallaxSlide(index) {
+function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.remove('active');
     if (i === index) {
@@ -22,9 +23,11 @@ function showParallaxSlide(index) {
   });
 }
 
-function nextParallaxSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showParallaxSlide(currentSlide);
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
 }
 
-setInterval(nextParallaxSlide, 5000); // Change every 5 seconds
+// Start the slideshow
+showSlide(currentSlide);
+setInterval(nextSlide, 4000); // every 4 seconds
