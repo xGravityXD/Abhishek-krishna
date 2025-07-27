@@ -1,32 +1,19 @@
-// === Dark/Light Theme Toggle ===
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-
-themeToggle.addEventListener('click', () => {
-  body.classList.toggle('light-theme');
-  themeToggle.textContent = body.classList.contains('light-theme')
-    ? '🕶 Dark Mode'
-    : '🎮 Light Mode';
-});
-
 // Theme toggle
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-themeToggle.addEventListener('click', () => {
-  body.classList.toggle('light-theme');
-  themeToggle.textContent = body.classList.contains('light-theme')
-    ? '🕶 Dark Mode'
-    : '🎮 Light Mode';
+const toggleBtn = document.getElementById("theme-toggle");
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
 });
 
-// Slideshow Logic
+// Slideshow logic
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll(".slide");
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) slide.classList.add('active');
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
   });
 }
 
@@ -35,5 +22,4 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 4000); // every 4 seconds
-
+setInterval(nextSlide, 4000); // 4 seconds
